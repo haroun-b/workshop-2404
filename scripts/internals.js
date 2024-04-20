@@ -1,5 +1,5 @@
 // const deadline = new Date("2024-04-22T20:30:00+02:00");
-const deadline = new Date("2024-04-20T14:00:00+02:00");
+const deadline = new Date("2024-04-20T16:00:00+02:00");
 const testSuite = {};
 
 const timerEl = document.querySelector("#timer");
@@ -9,12 +9,24 @@ const runTestsBtn = document.querySelector("#test-btn");
 const introductionEl = document.querySelector("#introduction");
 const storyEl = document.querySelector("#story");
 const mainEl = document.querySelector("main");
+const testsEl = document.querySelector("#tests");
 
 runTestsBtn.addEventListener("click", () => {
-  testSuite.runTests();
+  if (!localStorage.gameStarted) {
+    localStorage.gameStarted = true;
+  }
+
+  if (testSuite.runTests()) {
+    showFinalScreen();
+  }
 });
 
 const timerIterval = setInterval(updateTimer, 1000);
+
+if (localStorage.gameStarted) {
+  introductionEl.style.display = "none";
+  mainEl.style.display = "block";
+}
 
 function showFinalScreen() {
   const finalMessage = [];
