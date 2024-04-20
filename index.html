@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Workshop 2404</title>
+    <link
+      rel="stylesheet"
+      href="https://raw.githubusercontent.com/jensimmons/cssremedy/master/css/remedy.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="./styles.css"
+    />
+
+    <script
+      defer
+      src="./scripts/internals.js"
+    ></script>
+    <script
+      defer
+      src="./scripts/game.js"
+    ></script>
+    <script
+      defer
+      src="./scripts/tests.js"
+    ></script>
+  </head>
+  <body>
+    <header>Going live in: <span id="timer">00:00:00</span></header>
+
+    <h1>Welcome to Ironhack !!</h1>
+
+    <div id="story"></div>
+
+    <div id="introduction">
+      <p>
+        A prankster hacker has managed to infiltrate your codebase and wreak
+        havoc. Your once perfectly functioning code is now a mess, and to make
+        matters worse, it's about to go live!
+      </p>
+      <p>
+        Fix the bugs before the countdown hits zero. Failure is not an option;
+        the fate of your project, and perhaps even your company, hangs in the
+        balance. (No pressure)
+      </p>
+    </div>
+
+    <button id="test-btn">Run Tests</button>
+
+    <main>
+      <ul id="tests">
+        <li class="test">List Item 1</li>
+        <li class="test pending">List Item 2</li>
+        <li class="test failed">List Item 3</li>
+        <li class="test success">List Item 4</li>
+        <li>List Item 5</li>
+      </ul>
+
+      <pre id="inspector"><code></code></pre>
+    </main>
+  </body>
+</html>

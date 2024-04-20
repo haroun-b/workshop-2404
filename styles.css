@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+button {
+  all: unset;
+  box-sizing: border-box;
+}
+
+body {
+  --clr-amber: #ffbf00;
+  --clr-green: #398712;
+  --clr-red: #d93526;
+
+  background-color: #000;
+  color: #fff;
+  padding-top: 2rem;
+}
+
+body,
+h1 {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  max-width: 80%;
+  margin: 2rem auto;
+  text-align: justify;
+}
+
+#story {
+  display: none;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background-color: var(--clr-red);
+  padding: 0.6rem 0;
+}
+
+button#test-btn {
+  display: block;
+  background-color: var(--clr-amber);
+  color: #000;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin: 1rem auto 3rem;
+}
+
+button#test-btn:hover {
+  background-color: #ffcc00;
+}
+
+button#test-btn:active {
+  background-color: var(--clr-amber);
+}
+
+button#test-btn:disabled {
+  background-color: #666;
+  cursor: not-allowed;
+}
+
+main {
+  display: none;
+}
+
+#inspector {
+  position: relative;
+  outline: 2px solid var(--clr-amber);
+  max-width: 80%;
+  max-height: 400px;
+  margin: 2rem auto;
+  padding: 3rem 1rem 1rem;
+  overflow: scroll;
+}
+
+#inspector::before {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "Inspector Window";
+  font-size: 0.8rem;
+  background-color: #fff;
+  color: #000;
+  padding: 0.3rem 1rem;
+  width: max-content;
+}
+
+#tests {
+  width: max-content;
+  margin: 0 auto;
+}
+
+.test {
+  color: var(--clr-amber);
+  list-style-image: url(./assets/test-pending.svg);
+}
+
+.test.failed {
+  color: var(--clr-red);
+  list-style-image: url(./assets/test-failed.svg);
+}
+
+.test.success {
+  color: var(--clr-green);
+  list-style-image: url(./assets/test-success.svg);
+}
+
+.test.pending {
+  animation: blink 0.8s ease-in-out infinite alternate;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
