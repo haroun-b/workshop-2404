@@ -1,5 +1,4 @@
-// const deadline = new Date("2024-04-22T20:30:00+02:00");
-const deadline = new Date("2024-04-21T13:30:00+02:00");
+const deadline = new Date("2024-04-22T20:30:00+02:00");
 const testSuite = {};
 
 const timerEl = document.querySelector("#timer");
