@@ -130,3 +130,12 @@ main {
     opacity: 0.2;
   }
 }
+
+footer {
+  width: max-content;
+  margin: 4rem auto 2rem;
+}
+
+footer > :last-child {
+  margin-left: 3rem;
+}
