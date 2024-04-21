@@ -81,10 +81,8 @@ function formatTimeLeft(secondsLeft) {
   return `${hours}:${minutes}:${seconds}`;
 }
 
-function inspect(obj) {
-  inspectorEl.textContent += `${JSON.stringify(
-    obj,
-    null,
-    2
-  )}\n\n====================\n\n`;
+function inspect(...args) {
+  inspectorEl.textContent += `${args
+    .map((arg) => JSON.stringify(arg, null, 2))
+    .join(" ")}\n\n====================\n\n`;
 }
