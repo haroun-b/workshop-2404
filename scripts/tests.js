@@ -235,6 +235,16 @@ const tests = [
     } catch (_) {
       return false;
     }
+  }),
+  test("Who's laughing now? 😆", () => {
+    try {
+      return (
+        areYouLaughing ===
+        "YoU ShOuLdN'T Be lAuGhInG At tHiS, iT'S A SeRiOuS MaTtEr."
+      );
+    } catch (_) {
+      return false;
+    }
   })
 ];
 

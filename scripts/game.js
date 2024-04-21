@@ -120,3 +120,8 @@ const evens = [
 // - The word "SHAKABOOM" for every number divisible by 3 and 7
 // - ...and so on such as for a number divisible by 3, 5, 7, and 11, it should be "SHAKASHOKABOOMCOW"
 // - Example of the first 15 elements: [1, 2, 'SHAKA', 4, 'SHOKA', 'SHAKA', 'BOOM', 8, 'SHAKA', 'SHOKA', 'COW', 'SHAKA', 13, 'BOOM', 'SHAKASHOKA']
+
+// TODO15: Who's laughing now? 😆
+// Now just for the giggles, Let's transform the string in amIlaughing so that every other letter is uppercase. Such as the result is: "YoU ShOuLdN'T Be lAuGhInG At tHiS, iT'S A SeRiOuS MaTtEr."
+// Store the result in a variable named areYouLaughing
+const amIlaughing = "you shouldn't be laughing at this, it's a serious matter.";
