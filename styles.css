@@ -98,12 +98,14 @@ main {
 
 #tests {
   width: max-content;
+  max-width: 90%;
   margin: 0 auto;
 }
 
 .test {
   color: var(--clr-amber);
   list-style-image: url(./assets/test-pending.svg);
+  margin-top: 0.5rem;
 }
 
 .test.failed {
