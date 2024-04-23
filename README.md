@@ -9,3 +9,5 @@ The goal is to complete all the exercises and todos in `scripts/game.js` so that
 1. Clone the repo
 2. Open `index.html` in your browser (preferably using a live server)
 3. Open `scripts/game.js` in your code editor and start coding!
+
+## [Example Solution](./scripts/game.example-solution.js)
